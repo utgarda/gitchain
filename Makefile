@@ -1,4 +1,4 @@
-SOURCES=$(wildcard *.go **/*.go **/**/*.go)
+SOURCES=$(filter-out ui, $(wildcard *.go **/*.go **/**/*.go))
 
 all: gitchain
 
